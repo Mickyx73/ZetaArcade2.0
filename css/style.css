@@ -75,9 +75,9 @@ body {
 }
 
 /* css for nav bar*/
-.navbar{
+/*.navbar{
  
-}
+}*/
 .logo {
   width: 5%;
 
@@ -136,7 +136,7 @@ body {
 .heading h2 {
   padding-top: 5px;
 
-  width: 25%;
+  width: 30%;
   color: hsl(0, 0%, 91%);
   font-size: 30px;
   display: flex;
@@ -369,6 +369,21 @@ body {
 .gname{
   color: #fa5353;
   text-decoration: none;
+}
+/*all games page css*/
+.heading{
+  margin:  2% 4%;
+}
+.heading h2{
+  font-size: 40px;
+}
+.heading h2 img{
+  font-size: 20px;
+  background-color: #1b182b;
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid #b12cff;
+  margin-right: 7px;
 }
 
 @media only screen and (max-width:768px){
