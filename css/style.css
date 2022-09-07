@@ -135,13 +135,14 @@ body {
 }
 .heading h2 {
   padding-top: 5px;
-
   width: 35%;
   color: hsl(0, 0%, 91%);
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid #b12cff;
+  border-radius: 30px;
 }
 .trending h2 i {
   color: rgb(255, 248, 247);
@@ -230,13 +231,13 @@ body {
   top: 0;
   transform: rotateZ(180deg);
 }
-@keyframes scroll{
+/*@keyframes scroll{
     0%{
         transform: translateX(0);
     }100%{
         transform: translateX(calc(-360px * 9));
     }
-}
+}*/
 /*css for explore more games*/
 .all-games-grid {
   
