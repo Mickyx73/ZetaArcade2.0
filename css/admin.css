@@ -1,0 +1,86 @@
+/*
+   author Mickyx73 and Uchhasbarua
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+::selection {
+  color: hsl(0, 0%, 91%);
+  background: #0d81ec;
+}
+
+body {
+  background-color: #322f40;
+}
+.text-align-center {
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+  float: none;
+}
+.wrapper {
+  border: 1px solid black;
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+}
+.container {
+  width: 90%;
+  border: 3px solid #b12cff;
+  background-color: #1b182b;
+  margin: 0 auto;
+  padding: 1%;
+  border-radius: 15px;
+  margin-bottom: 2%;
+}
+
+/*menu css start*/
+.menu ul {
+  list-style: none;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  vertical-align: middle;
+}
+.menu ul li {
+  display: inline;
+  padding: 0.5%;
+}
+.menu ul li a {
+  color: rgb(255, 248, 247);
+  text-decoration: none;
+}
+.menu ul li a i {
+  font-size: 40px;
+  background-color: #fa5353;
+  border-radius: 50%;
+  padding: 5px;
+}
+.main-content strong {
+  color: #fa5353;
+  font-size: 35px;
+}
+.col-4 {
+  width: 20%;
+  background-color: #d1c9eb;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  margin: 1%;
+  padding: 1%;
+  float: left;
+}
+/*menu css end*/
+.footer p {
+  color: antiquewhite;
+}
+.footer {
+  width: 100%;
+}
+.footer a {
+  text-decoration: none;
+  text-decoration: #fa5353;
+}
