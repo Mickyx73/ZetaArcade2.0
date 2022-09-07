@@ -19,7 +19,7 @@ body {
 
 .container {
   width: 90%;
-  border: 3px solid #fa5353;
+  border: 3px solid #b12cff;
   background-color: #1b182b;
   margin: 0 auto;
   padding: 1%;
@@ -67,7 +67,7 @@ body {
   margin-left: 1%;
 }
 .btn-primary:hover {
-  background-color: #bb2c2c;
+  background-color: #b12cff;
 }
 
 .bx {
@@ -267,7 +267,7 @@ body {
   border-radius: 20px;
 }
 .explore-box {
-  border: 3px solid #fa5353;
+  border: 3px solid #b12cff;
   border-radius: 20px;
   position: relative;
   width: fit-content;
