@@ -33,7 +33,42 @@ $user_data = check_login($con);
 
     </div>
     <!--menu section end-->
+           <!--main content start-->
+    <div class="main-content">
+        <div class="wrapper container text-align-center">
+            <h1><strong>Add Game</strong></h1>
 
+            <form action="" method="POST" enctype="multipart/form-data">
+                <table class="tbl-30 text-align-center">
+                    <tr>
+                        <td class="tdhed">Game ID:</td>
+                        <td><input type="text" name="catagory" placeholder="Game ID"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdhead">Title:</td>
+                        <td><input type="text" name="cata_id" placeholder="Title"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdhead">Genre:</td>
+                        <td><input type="text" name="cata_id" placeholder="Genre"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdhead">Rating:</td>
+                        <td><input type="text" name="cata_id" placeholder="Rating"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdhead">Image:</td>
+                        <td><input type="text" name="cata_id" placeholder="Image"></td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" value="Add Game" class="btn-primary red">
+            </form>
+
+
+        </div>
+
+    </div>
+    <!--main content ends-->
 
     
     <!--footer section-->

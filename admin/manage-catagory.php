@@ -61,7 +61,7 @@ $user_data = check_login($con);
                     $sn = 1;
                     if ($rows > 0) {
                         while ($rows = mysqli_fetch_assoc($res)) {
-                            $sn = $rows['serial'];
+                            $id = $rows['serial'];
                             $catagory = $rows['catagory'];
                             $cataid = $rows['cataid'];
                             $status = $rows['status'];
@@ -72,7 +72,7 @@ $user_data = check_login($con);
                                 <td><?php echo $catagory; ?></td>
                                 <td><?php echo $status; ?></td>
                                 <td>
-                                    <a href="" class="btn-primary del">Delete</a>
+                                    <a href="<?php siteurl; ?>delete-catagory.php <?php echo $id; ?>" class="btn-primary del">Delete</a>
                                     <a href="#" class="btn-primary gre">Update</a>
                                 </td>
 

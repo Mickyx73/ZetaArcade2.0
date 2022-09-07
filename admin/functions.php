@@ -1,5 +1,5 @@
 <?php
-
+define('siteurl','http://localhost/zeta2.0/admin/index.php');
 function check_login($con)
 {
 

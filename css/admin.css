@@ -163,6 +163,15 @@ table td input[type="text"]{
     color: #4b4f93;
     font-weight: bold;
 }
+table td input[type="img"]{
+  width: 50%;
+  padding: 1%;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  color: #4b4f93;
+  font-weight: bold;
+}
 .footer p {
   color: antiquewhite;
 }
