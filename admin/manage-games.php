@@ -38,24 +38,44 @@
     <!--main content start-->
     <div class="main-content">
         <div class="wrapper container text-align-center">
-            <h1><strong>DASHBOARD</strong></h1>
-            <div class="col-4">
-                <h1>5</h1>
-                 Catagories
-            </div>
-            <div class="col-4">
-                <h1>5</h1>
-                 games
-            </div>
-            <div class="col-4">
-                <h1>5</h1>
-                 requests
-            </div>
-            <div class="col-4">
-                <h1>5</h1>
-                 Active Admins
-            </div>
-            <div class="clearfix"></div>
+            <h1><strong>Manage Games</strong></h1>
+            <a href="add-game.php" class="btn-primary red">Add Games</a>
+            
+            <table class="tbl-full text-align-center">
+                <tr>
+                    <th>ID</th>
+                    <th>Catagory</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>asd</td>
+                    <td>asd</td>
+                    <td>
+                        <a href="#" class="btn-primary del">Delete</a>
+                        <a href="#" class="btn-primary gre">Update</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>asd</td>
+                    <td>asd</td>
+                    <td>
+                    <a href="#" class="btn-primary del">Delete</a>
+                        <a href="#" class="btn-primary gre">Update</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>asd</td>
+                    <td>asd</td>
+                    <td>
+                    <a href="#" class="btn-primary del">Delete</a>
+                        <a href="#" class="btn-primary gre">Update</a>
+                    </td>
+                </tr>
+            </table>
         </div>
         
     </div>

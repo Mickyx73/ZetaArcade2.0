@@ -5,6 +5,24 @@ include("connection.php");
 include("functions.php");
 
 $user_data = check_login($con);
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    //something was posted
+    $catagory = $_POST['catagory'];
+    $cata_id = $_POST['cata_id'];
+    $status = 'Active';
+    if (!empty($catagory) && !empty($cata_id)) {
+
+        //save to database
+        
+        $query = "insert into catagory (catagory,cataid,status) values ('$catagory','$cata_id','$status')";
+
+        mysqli_query($con, $query);      
+        
+    } else {
+        echo "Please enter some valid information!";
+    }
+}
 ?>
 <html>
 
@@ -16,7 +34,6 @@ $user_data = check_login($con);
 </head>
 
 <body>
-    <!--menu section start-->
     <div class="menu text-align-center">
         <div class="wrapper container">
             <div class="Loggedin">
@@ -31,53 +48,29 @@ $user_data = check_login($con);
                 <li><a href="logout.php"><i class='bx bx-log-out-circle'></i></a></li>
             </ul>
         </div>
-    </div>
 
     </div>
     <!--menu section end-->
     <!--main content start-->
     <div class="main-content">
         <div class="wrapper container text-align-center">
-            <h1><strong>Active Admins</strong></h1>
-            <table class="tbl-full text-align-center">
-                <tr>
-                    <th>ID</th>
-                    <th>User Name</th>
-                    <th>Email</th>
+            <h1><strong>Add Catagory</strong></h1>
 
-                </tr>
-                <?php
-                $sql = "SELECT * FROM login";
-                $res = mysqli_query($con, $sql);
-
-                if ($res == TRUE) {
-                    $rows = mysqli_num_rows($res);
-                    $sn = 1;
-                    if ($rows > 0) {
-                        while ($rows = mysqli_fetch_assoc($res)) {
-                            $id = $rows['id'];
-                            $email = $rows['email'];
-                            $username = $rows['username'];
-                ?>
-                            <tr>
-                                <td><?php echo $sn++; ?></td>
-                                <td><?php echo $username; ?></td>
-                                <td><?php echo $email; ?></td>
-
-                            </tr>
-                <?php
-
-                        }
-                    } else {
-                    }
-                } else {
-                }
-                ?>
+            <form action="" method="POST">
+                <table class="tbl-30">
+                    <tr>
+                        <td class="tdhed">Catagory Name:</td>
+                        <td><input type="text" name="catagory" placeholder="Catagory Name"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdhead">Catagory ID:</td>
+                        <td><input type="text" name="cata_id" placeholder="Catagory ID"></td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" value="Add Catagory" class="btn-primary red">
+            </form>
 
 
-
-
-            </table>
         </div>
 
     </div>

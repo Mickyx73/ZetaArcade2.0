@@ -5,6 +5,8 @@ include("connection.php");
 include("functions.php");
 
 $user_data = check_login($con);
+
+
 ?>
 <html>
 
@@ -38,16 +40,20 @@ $user_data = check_login($con);
     <!--main content start-->
     <div class="main-content">
         <div class="wrapper container text-align-center">
-            <h1><strong>Active Admins</strong></h1>
+            <h1><strong>Manage Catagories</strong></h1>
+
+            <a href="add-catagory.php" class="btn-primary red">Add Category</a>
+
             <table class="tbl-full text-align-center">
                 <tr>
+                    <th>SN</th>
                     <th>ID</th>
-                    <th>User Name</th>
-                    <th>Email</th>
-
+                    <th>Catagory</th>
+                    <th>Status</th>
+                    <th>Actions</th>
                 </tr>
                 <?php
-                $sql = "SELECT * FROM login";
+                $sql = "SELECT * FROM catagory";
                 $res = mysqli_query($con, $sql);
 
                 if ($res == TRUE) {
@@ -55,14 +61,20 @@ $user_data = check_login($con);
                     $sn = 1;
                     if ($rows > 0) {
                         while ($rows = mysqli_fetch_assoc($res)) {
-                            $id = $rows['id'];
-                            $email = $rows['email'];
-                            $username = $rows['username'];
+                            $sn = $rows['serial'];
+                            $catagory = $rows['catagory'];
+                            $cataid = $rows['cataid'];
+                            $status = $rows['status'];
                 ?>
                             <tr>
                                 <td><?php echo $sn++; ?></td>
-                                <td><?php echo $username; ?></td>
-                                <td><?php echo $email; ?></td>
+                                <td><?php echo $cataid; ?></td>
+                                <td><?php echo $catagory; ?></td>
+                                <td><?php echo $status; ?></td>
+                                <td>
+                                    <a href="" class="btn-primary del">Delete</a>
+                                    <a href="#" class="btn-primary gre">Update</a>
+                                </td>
 
                             </tr>
                 <?php
@@ -73,7 +85,6 @@ $user_data = check_login($con);
                 } else {
                 }
                 ?>
-
 
 
 

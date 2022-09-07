@@ -231,13 +231,13 @@ body {
   top: 0;
   transform: rotateZ(180deg);
 }
-/*@keyframes scroll{
+@keyframes scroll{
     0%{
         transform: translateX(0);
     }100%{
         transform: translateX(calc(-360px * 9));
     }
-}*/
+}
 /*css for explore more games*/
 .all-games-grid {
   
