@@ -5,6 +5,26 @@ include("connection.php");
 include("functions.php");
 
 $user_data = check_login($con);
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    //something was posted
+    $id = $_POST['id'];
+    $title = $_POST['title'];
+    $genre = $_POST['genre'];
+    $rating = $_POST['rating'];
+    $status = 'Active';
+    if (!empty($id) && !empty($title)) {
+
+        //save to database
+        
+        $query = "insert into games (id,title,genre,rating,status) values ('$id','$title','$genre','$rating','$status')";
+
+        mysqli_query($con, $query);      
+        
+    } else {
+        echo "Please enter some valid information!";
+    }
+}
 ?>
 <html>
 
@@ -42,23 +62,23 @@ $user_data = check_login($con);
                 <table class="tbl-30 text-align-center">
                     <tr>
                         <td class="tdhed">Game ID:</td>
-                        <td><input type="text" name="catagory" placeholder="Game ID"></td>
+                        <td><input type="text" name="id" placeholder="Game ID"></td>
                     </tr>
                     <tr>
                         <td class="tdhead">Title:</td>
-                        <td><input type="text" name="cata_id" placeholder="Title"></td>
+                        <td><input type="text" name="title" placeholder="Title"></td>
                     </tr>
                     <tr>
                         <td class="tdhead">Genre:</td>
-                        <td><input type="text" name="cata_id" placeholder="Genre"></td>
+                        <td><input type="text" name="genre" placeholder="Genre"></td>
                     </tr>
                     <tr>
                         <td class="tdhead">Rating:</td>
-                        <td><input type="text" name="cata_id" placeholder="Rating"></td>
+                        <td><input type="text" name="rating" placeholder="Rating"></td>
                     </tr>
                     <tr>
                         <td class="tdhead">Image:</td>
-                        <td><input type="text" name="cata_id" placeholder="Image"></td>
+                        <td><input type="text" name="img" placeholder="Image"></td>
                     </tr>
                 </table>
                 <input type="submit" name="submit" value="Add Game" class="btn-primary red">

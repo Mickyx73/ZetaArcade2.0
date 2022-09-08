@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         //save to database
         
-        $query = "insert into catagory (catagory,cataid,status) values ('$catagory','$cata_id','$status')";
+        $query = "insert into catagory (catagory,cataid,Status) values ('$catagory','$cata_id','$status')";
 
         mysqli_query($con, $query);      
         
