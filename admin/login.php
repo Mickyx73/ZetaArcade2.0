@@ -63,19 +63,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			border-radius: 15px;
 			margin-bottom: 2%;
 		}
-			
-		a{
+
+		a {
 			color: #aaa;
 		}
-		.log{
+
+		.log {
 			background-color: #fa5353;
 			border-radius: 25px;
 			padding-top: 10px;
 			padding-bottom: 10px;
 		}
-		label{
+
+		label {
 			color: #aaa;
 		}
+
 		#text {
 
 			height: 25px;
@@ -93,12 +96,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			background-color: #b12cff;
 			border-radius: 20px;
 			border: none;
-		  
+
 		}
 
 		#box {
 
-			
+
 			margin: auto;
 			width: 300px;
 			padding: 20px;
