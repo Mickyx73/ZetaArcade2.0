@@ -73,17 +73,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <a href="index.html"><i class="bx bx-home"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="bx bxs-user-circle"></i></a>
+                        <a href="admin/manage-admin.php"><i class="bx bxs-user-circle"></i></a>
                     </li>
                     <li>
                         <a href="#"><i class="bx bx-support"></i></a>
                     </li>
-                    <li>
+                <!--    <li>
                         <a href="#"><i class="bx bxs-bell-ring"></i></a>
                     </li>
                     <li>
                         <a href="#"><i class="bx bx-menu"></i></a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <div class="clearfix"></div>

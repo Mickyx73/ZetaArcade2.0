@@ -169,7 +169,7 @@ body {
 }
 .slide-track {
   display: flex;
-  width: calc(360px * 18);
+  width: calc(360px * 6);
 
   animation: scroll 90000ms linear infinite;
 }
