@@ -19,7 +19,7 @@ body {
 
 .container {
   width: 90%;
-  border: 3px solid #fa5353;
+  border: 3px solid #b12cff;
   background-color: #1b182b;
   margin: 0 auto;
   padding: 1%;
@@ -67,7 +67,7 @@ body {
   margin-left: 1%;
 }
 .btn-primary:hover {
-  background-color: #bb2c2c;
+  background-color: #b12cff;
 }
 
 .bx {
@@ -110,7 +110,7 @@ body {
   padding: 5px;
 }
 .menu ul li a i:hover {
-  background-color: #bb2c2c;
+  background-color: #b12cff;
 }
 
 .menu {
@@ -135,13 +135,14 @@ body {
 }
 .heading h2 {
   padding-top: 5px;
-
   width: 35%;
   color: hsl(0, 0%, 91%);
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid #b12cff;
+  border-radius: 30px;
 }
 .trending h2 i {
   color: rgb(255, 248, 247);
@@ -168,7 +169,7 @@ body {
 }
 .slide-track {
   display: flex;
-  width: calc(360px * 18);
+  width: calc(360px * 6);
 
   animation: scroll 90000ms linear infinite;
 }
@@ -267,7 +268,7 @@ body {
   border-radius: 20px;
 }
 .explore-box {
-  border: 3px solid #fa5353;
+  border: 3px solid #b12cff;
   border-radius: 20px;
   position: relative;
   width: fit-content;
